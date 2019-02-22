@@ -1,0 +1,65 @@
+{
+  "main_screen": [
+    {
+      "loading": "Loading"
+    },
+    {
+      "no_network": "Please check your internet connection"
+    },
+    {
+      "retry": "Retry"
+    },
+    {
+      "no_item": "Sorry, no item is available"
+    },
+    {
+      "error": "Sorry, something went wrong"
+    },
+    {
+      "percent": "98%"
+    }
+  ],
+  "drawer_header": [
+    {
+      "name": "Tumur.B(Alex)"
+    },
+    {
+      "title": "Android Developer"
+    }
+  ],
+  "profile": [
+    {
+      "greeting": "\uD83D\uDC4BHello, my name's"
+    },
+    {
+      "name": "Tumur.B(Alex)"
+    },
+    {
+      "title": "Android Developer"
+    },
+    {
+      "more": "Read more"
+    },
+    {
+      "location": "Hayward, CA"
+    },
+    {
+      "email": "Email"
+    },
+    {
+      "phone": "Phone"
+    },
+    {
+      "github": "Github"
+    },
+    {
+      "degree": "Bachelor's degree, Computer Science"
+    },
+    {
+      "school": "University of Mittweida, Germany"
+    },
+    {
+      "summary": "Android Developer with two years of experience in Kotlin, Java, and published four apps on Google Play Store. Up to date with the latest technologies."
+    }
+  ]
+}

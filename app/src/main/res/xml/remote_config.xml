@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap>
+    <entry>
+        <key>name</key>
+        <value>Tumur.B(Alex)</value>
+    </entry>
+    <entry>
+        <key>avatar</key>
+        <value>https://tumur.me/img/profile.jpg</value>
+    </entry>
+    <entry>
+        <key>title</key>
+        <value>Android Developer</value>
+    </entry>
+    <entry>
+        <key>read_more</key>
+        <value>Read more</value>
+    </entry>
+</defaultsMap>

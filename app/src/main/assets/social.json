@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Github",
+    "url": "https://github.com/tumurb",
+    "order": 1
+  },
+  {
+    "name": "LinkedIn",
+    "url": "https://www.linkedin.com/in/tumur-alex/",
+    "order": 2
+  },
+  {
+    "name": "Medium",
+    "url": "https://medium.com/@tumurr",
+    "order": 3
+  }
+]
