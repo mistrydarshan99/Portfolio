@@ -1,13 +1,13 @@
-# Bio <img src="https://firebasestorage.googleapis.com/v0/b/ioco-5c746.appspot.com/o/kotlin.png?alt=media&token=7e4e5ac0-d101-4f97-9f20-c5e1cb36eafe" height="20"> <img src="https://firebasestorage.googleapis.com/v0/b/ioco-5c746.appspot.com/o/jetpack.png?alt=media&token=da5e9d49-7495-4fe1-8e0d-43894e99f5d2" width="25">
+# Portfolio <img src="https://firebasestorage.googleapis.com/v0/b/ioco-5c746.appspot.com/o/kotlin.png?alt=media&token=7e4e5ac0-d101-4f97-9f20-c5e1cb36eafe" height="20"> <img src="https://firebasestorage.googleapis.com/v0/b/ioco-5c746.appspot.com/o/jetpack.png?alt=media&token=da5e9d49-7495-4fe1-8e0d-43894e99f5d2" width="25">
 [![](https://jitpack.io/v/danimahardhika/candybar-library.svg)](https://jitpack.io/#danimahardhika/candybar-library) [![Build Status](https://travis-ci.org/danimahardhika/candybar-library.svg?branch=master)](https://travis-ci.org/danimahardhika/candybar-library) [![CircleCI](https://circleci.com/gh/danimahardhika/candybar-library.svg?style=svg)](https://circleci.com/gh/danimahardhika/candybar-library) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/108f01d34ab2456b866c5700f03591a5)](https://www.codacy.com/app/danimahardhika/candybar-library?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=danimahardhika/candybar-library&amp;utm_campaign=Badge_Grade) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 
 ## A personal portfolio app
 
-<img src="https://firebasestorage.googleapis.com/v0/b/ioco-5c746.appspot.com/o/icon_bio.png?alt=media&token=0ee960dc-1697-43e7-ad79-d30bd6897631" align="left" width="200" hspace="10" vspace="10">
-93% of paper comes from trees, and they are not recycled paper. We’re losing over 15 billion trees annually. In the U.S. alone, 10,000,000,000 business cards are printed every year, and 88% of them are thrown away.<br/>
+<img src="https://firebasestorage.googleapis.com/v0/b/portfolio-app-147b5.appspot.com/o/resume-app-icon.png?alt=media&token=d21cdf74-ba02-4292-a646-ddca47238c24" align="left" width="200" hspace="10" vspace="10">
+I am an Android Developer and seeking opportunities where I can make an impact through design and development. I have two years of experience in Kotlin, Java, and published four apps on the Google Play Store. I am up to date with the latest technologies.<br/>
 <br/>
-<em>Stop printing business cards.</em>
+<em>Please hire me</em>
 <br/>
 <div style="display:flex;" >
 <a target="_blank" href="#">
@@ -15,7 +15,7 @@
         height="80"
         src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" />
 </a>
-<a target="_blank" href="https://8io.co/bio">
+<a target="_blank" href="https://tumur.me">
     <img alt="Visit Web"
         height="80"
         src="https://firebasestorage.googleapis.com/v0/b/ioco-5c746.appspot.com/o/visit_web.png?alt=media&token=c2c56c2e-f891-4761-b430-731840eda9a0" />
@@ -117,7 +117,7 @@ the option to use the gradle wrapper
 
 ## Project Maintained By
 
-<img src="https://firebasestorage.googleapis.com/v0/b/ioco-5c746.appspot.com/o/tumur.png?alt=media&token=75fb45df-fd35-488c-85f1-4ea321aae6d2" align="left" width="60" hspace="10" vspace="10">
+<img src="https://firebasestorage.googleapis.com/v0/b/portfolio-app-147b5.appspot.com/o/pro.png?alt=media&token=f10a1d13-5ffb-46ed-9460-1bdb966365fe" align="left" width="60" hspace="10" vspace="10">
 <b>Tumur.B (Alex)</b><br/>
 Android Developer
 <br/>
