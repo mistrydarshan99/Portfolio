@@ -93,7 +93,7 @@ the option to use the gradle wrapper
 ## Contributing
 
 ### Would you like to contribute code?
-1. [Portfolio Hydras](https://github.com/tumurb/Portfolio/).
+1. [Fork Portfolio](https://github.com/tumurb/Portfolio/).
 2. Create a new branch ([using GitHub](https://help.github.com/articles/creating-and-deleting-branches-within-your-repository/)) or the command `git checkout -b branch-name develop`).
 3. [Start a pull request](https://github.com/tumurb/Portfolio/compare). Reference [existing issues](https://github.com/tumurb/Portfolio/issues) when possible.
 
