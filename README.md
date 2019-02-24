@@ -103,16 +103,16 @@ the option to use the gradle wrapper
 
 ## Libraries used
 
-| Android Foundation | Architecture Components | Behavior | UI | Third party
-|:-------------------|:------------------------|:---------|:---------|:---------|
-|[Appcompat](https://developer.android.com/topic/libraries/support-library/packages#v7-appcompat)|[Data Binding](https://developer.android.com/topic/libraries/data-binding/)|[Sharing](https://developer.android.com/training/sharing/shareaction)|[Constraint Layout](https://developer.android.com/training/constraint-layout/)|[Anko](https://github.com/Kotlin/anko)|
-|[Android KTX](https://developer.android.com/kotlin/ktx)|[LiveData](https://developer.android.com/topic/libraries/architecture/livedata.html)|[Preferences](https://developer.android.com/guide/topics/ui/settings)|[Fragment](https://developer.android.com/guide/components/fragments)|[Koin](https://github.com/InsertKoinIO/koin)|
-||[Lifecycles](https://developer.android.com/topic/libraries/architecture/lifecycle)|[Media & Playback](https://developer.android.com/guide/topics/media-apps/media-apps-overview)|[Android Acessibility Guideline](https://developer.android.com/guide/topics/ui/accessibility/)|[Retrofit](http://square.github.io/retrofit/)|
-||[Navigation](https://developer.android.com/topic/libraries/architecture/navigation/)||[Material Design Guideline](https://material.io/design/guidelines-overview/)|[OkHttp](http://square.github.io/okhttp/)|
-||[Paging](https://developer.android.com/topic/libraries/architecture/paging/)||[Material Theming](https://material.io/develop/android/theming/color/)|[Glide](https://github.com/bumptech/glide)|
-||[Room](https://developer.android.com/topic/libraries/architecture/room.html)|||[Timber](https://github.com/JakeWharton/timber)|
-||[ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel.html)|||[ThreenTenABP](https://github.com/JakeWharton/ThreeTenABP)|
-||[Work Manager](https://developer.android.com/topic/libraries/architecture/workmanager/)|||[Stetho](http://facebook.github.io/stetho/)|
+| Android Foundation | Architecture Components | Behavior | UI |
+|:-------------------|:------------------------|:---------|:---------|
+|[Appcompat](https://bit.ly/2NuMMK8)|[Data Binding](https://bit.ly/2GIx8KE)|[Sharing](https://bit.ly/2N6AhTX)|[Constraint Layout](https://bit.ly/2tBwOVu)|
+|[Android KTX](https://bit.ly/2EtrEB6)|[LiveData](https://bit.ly/2IAnewp)|[Preferences](https://bit.ly/2TcvKWl)|[Fragment](https://bit.ly/2LKTfPd)|
+||[Lifecycles](https://bit.ly/2E7ackq)|[Media & Playback](https://bit.ly/2IAx3tY)|[Android Acessibility Guideline](https://bit.ly/2AfIFvN)|
+||[Navigation](https://bit.ly/2NLl1MC)||[Material Design Guideline](https://bit.ly/2VdJ6io)|
+||[Paging](https://bit.ly/2IAnVWx)||[Material Theming](https://bit.ly/2NpMeVH)|
+||[Room](https://bit.ly/2lXfwOX)|||
+||[ViewModel](https://bit.ly/2H0vRh3)|||
+||[Work Manager](https://bit.ly/2EtEaAm)|||
 
 
 ## Project Maintained By
