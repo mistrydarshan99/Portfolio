@@ -101,7 +101,7 @@ the option to use the gradle wrapper
 * You can [discuss a bug](https://github.com/tumurb/Bio/issues) or if it was not reported yet [submit a bug](https://github.com/tumurb/Bio/issues/new).
 
 
-## Libraries used
+## Used Android Jetpack Components
 
 | Android Foundation | Architecture Components | Behavior | UI |
 |:-------------------|:------------------------|:---------|:---------|
@@ -116,6 +116,7 @@ the option to use the gradle wrapper
 ||||[Android Accessibility Guideline](https://bit.ly/2AfIFvN)|
 ||||[Google Play Instant App](https://bit.ly/2OEkwVy)|
 
+## Used third party libraries
 
 ## Project Maintained By
 
