@@ -137,11 +137,11 @@ the option to use the gradle wrapper
 |[CircleImageView](https://bit.ly/1MlTaA6)|[Dynamic Links](https://bit.ly/2GrEOwL)||
 |[SDP - Scalable Size Unit](https://bit.ly/2T9wlYZ)|[App Indexing](https://bit.ly/2Tcy9jP)||
 
-## Applied ❤️Best Practices
+## Applied Best Practices
 
-<em>A special thanks to the authors who shared following posts, they were a great resource during my learning 🙌🏻</em>
+<em>A special ❤️thanks to the authors who shared following posts, they were a great resource during my learning 🙌🏻</em>
 
-# Live Data & ViewModel
+### Live Data & ViewModel
 * <a href="https://bit.ly/2Iy0psU" target="_blank">ViewModels and LiveData: Patterns + AntiPatterns</a>
 * <a href="https://bit.ly/2QslbgB" target="_blank">LiveData with SnackBar, Navigation and other events</a>
 * <a href="https://bit.ly/2H133oY" target="_blank">LiveData beyond the ViewModel</a>
