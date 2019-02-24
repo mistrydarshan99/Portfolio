@@ -23,8 +23,11 @@ I am an Android Developer and seeking opportunities where I can make an impact t
 </div>
 </br>
 
+## Video
 
-## Previews
+[![Little red ridning hood](http://i.imgur.com/7YTMFQp.png)](https://vimeo.com/3514904 "Little red riding hood - Click to Watch!")
+
+## Screenshots
 
 <img src="https://firebasestorage.googleapis.com/v0/b/ioco-5c746.appspot.com/o/github_placeholder.jpg?alt=media&token=0f502370-ca66-410d-89dc-1c0992774a43" width="215"/> <img src="https://firebasestorage.googleapis.com/v0/b/ioco-5c746.appspot.com/o/github_placeholder.jpg?alt=media&token=0f502370-ca66-410d-89dc-1c0992774a43" width="215"/> <img src="https://firebasestorage.googleapis.com/v0/b/ioco-5c746.appspot.com/o/github_placeholder.jpg?alt=media&token=0f502370-ca66-410d-89dc-1c0992774a43" width="215"/> 
 <img src="https://firebasestorage.googleapis.com/v0/b/ioco-5c746.appspot.com/o/github_placeholder.jpg?alt=media&token=0f502370-ca66-410d-89dc-1c0992774a43" width="215"/> <img src="https://firebasestorage.googleapis.com/v0/b/ioco-5c746.appspot.com/o/github_placeholder.jpg?alt=media&token=0f502370-ca66-410d-89dc-1c0992774a43" width="215"/> <img src="https://firebasestorage.googleapis.com/v0/b/ioco-5c746.appspot.com/o/github_placeholder.jpg?alt=media&token=0f502370-ca66-410d-89dc-1c0992774a43" width="215"/>
