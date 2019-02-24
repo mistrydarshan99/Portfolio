@@ -40,7 +40,7 @@
 | **Kotlin**                                      | This app is completely written in Kotlin.                              |
 | **MVVM architecture**                           | Using the lifecycle aware viewmodels, the view observes changes in the model / repository.|
 | **Android Architecture Components**             | Lifecycle awareness has been achieved using a combination of LiveData, ViewModels and Room.|
-| **Firebase**                                    | Firebase Storage, Analytics, Crashlytics, Cloud Firestore, In App-Messaging, Remote Config|
+| **Backend**                                    | Used Firebase products for backend and REST API|
 | **Dependency Injection**                        | Common elements like context, networking interface are injected using Koin.|
 | **Offline first architecture**                  | All the data is first tried to be loaded from the db and then updated from the server. This ensures that the app is usable even in an offline mode.|
 | **Effective Networking**                        | Using a combination of Retrofit, Room and LiveData, we are able to handle networking in the most effective way.|
@@ -78,6 +78,12 @@ This project uses Firebases Analytics and Crashlytics, Cloud Firestore, Remote C
 6. [Setup Firebase Cloud Firestore](https://firebase.google.com/docs/firestore/quickstart/)
 7. [Setup Firebase Storage](https://firebase.google.com/docs/storage/android/start)
 8. [Setup Firebase Remote Config](https://firebase.google.com/docs/remote-config/use-config-android/)
+9. [Setup Firebase Cloud Functions](https://firebase.google.com/docs/functions/get-started)
+10. [Setup Firebase Hosting](https://firebase.google.com/docs/hosting/quickstart)
+11. [Setup Firebase Peformance Monitoring](https://firebase.google.com/docs/perf-mon/get-started-android)
+12. [Setup Firebase Test Lab ](https://firebase.google.com/docs/test-lab/)
+13. [Setup Firebase Dynamic Links ](https://firebase.google.com/docs/dynamic-links/)
+14. [Setup Firebase App Indexing ](https://firebase.google.com/docs/app-indexing/android/app)
 
 
 ## Project Setup
