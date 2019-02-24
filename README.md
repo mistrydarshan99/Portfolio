@@ -137,12 +137,42 @@ the option to use the gradle wrapper
 
 ## Applied Best Practices
 
-<em>A special ❤️thanks to the authors who shared following posts, they were a great resource during my learning 🙌🏻</em>
+<em>A special thanks to the authors who shared following posts, they were a great resource during my learning 🙌🏻</em>
 
 ### Live Data & ViewModel
 * <a href="https://bit.ly/2Iy0psU" target="_blank">ViewModels and LiveData: Patterns + AntiPatterns</a>
 * <a href="https://bit.ly/2QslbgB" target="_blank">LiveData with SnackBar, Navigation and other events</a>
 * <a href="https://bit.ly/2H133oY" target="_blank">LiveData beyond the ViewModel</a>
+
+### Room
+* <a href="https://bit.ly/2E8o51R" target="_blank">7 Pro-tips for Room</a>
+* <a href="https://bit.ly/2VhVU7g" target="_blank">Room 🔗 Coroutines</a>
+
+### DataBinding
+* <a href="https://bit.ly/2SmwyUc" target="_blank">Data Binding — Lessons Learnt</a>
+
+### Koin
+* <a href="https://bit.ly/2E7w3YP" target="_blank">Painless Android testing with Room & Koin</a>
+* <a href="https://bit.ly/2Nrr1e7" target="_blank">Unlock your Android ViewModel power with Koin</a>
+
+### Coroutines
+* <a href="https://bit.ly/2XlDiW8" target="_blank">Android Coroutine Recipes</a>
+* <a href="https://bit.ly/2SrVt8Y" target="_blank">Kotlin Coroutines patterns & anti-patterns</a>
+* <a href="https://bit.ly/2SoioSe" target="_blank">Android Networking in 2019 — Retrofit with Kotlin’s Coroutines</a>
+* <a href="https://bit.ly/2EeC7Pg" target="_blank">The reason to avoid GlobalScope</a>
+
+
+### Animation
+* <a href="https://bit.ly/2VgM9WZ" target="_blank">Re-animation</a>
+* <a href="https://bit.ly/2E3z1NW" target="_blank">Using vector assets in Android apps</a>
+* <a href="https://bit.ly/2XjlQRW" target="_blank">Creating AnimatedVectorDrawables with Shape Shifter</a>
+* <a href="https://bit.ly/2m8PVCy" target="_blank">Introduction to MotionLayout</a>
+* <a href="https://bit.ly/2tAzToD" target="_blank">Defining motion paths in MotionLayout</a>
+
+
+### Other
+* <a href="https://bit.ly/2ThdlHV" target="_blank">Playing with Paging Library, Retrofit, Coroutines, Koin & Testing.</a>
+* <a href="https://bit.ly/2H1f1yE" target="_blank">Kotlin + buildSrc for Better Gradle Dependency Management</a>
 
 ## Project Maintained By
 
