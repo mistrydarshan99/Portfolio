@@ -139,8 +139,8 @@ the option to use the gradle wrapper
 
 ## Applied Best Practices
 
-| Live Data & ViewModel |
-|:---|
+| Live Data & ViewModel | |
+|:---|:---|
 | Title | Link |
 |:----|:----|
 | **ViewModels and LiveData: Patterns + AntiPatterns** | <a href="https://bit.ly/2Iy0psU" target="_blank">Link</a>|
