@@ -106,7 +106,7 @@ the option to use the gradle wrapper
 | Android Foundation | Architecture Components | Behavior | UI |
 |:-------------------|:------------------------|:---------|:---------|
 |[Appcompat](https://bit.ly/2NuMMK8)|[Data Binding](https://bit.ly/2GIx8KE)|[Media & Playback](https://bit.ly/2IAx3tY)|[Constraint Layout](https://bit.ly/2tBwOVu)|
-|[Android KTX](https://bit.ly/2EtrEB6)|[LiveData](https://bit.ly/2IAnewp)|[Notifications](https://bit.ly/2BQyjmZ)]|[Fragment](https://bit.ly/2LKTfPd)|
+|[Android KTX](https://bit.ly/2EtrEB6)|[LiveData](https://bit.ly/2IAnewp)|[Notifications](https://bit.ly/2BQyjmZ)|[Fragment](https://bit.ly/2LKTfPd)|
 |[Multidex](https://bit.ly/2qnmlL1)|[Lifecycles](https://bit.ly/2E7ackq)|[Sharing](https://bit.ly/2N6AhTX)|[Android Accessibility Guideline](https://bit.ly/2AfIFvN)|
 |[Test](https://bit.ly/2GIIOgo)|[Navigation](https://bit.ly/2NLl1MC)||[Material Design Guideline](https://bit.ly/2VdJ6io)|
 ||[Paging](https://bit.ly/2IAnVWx)||[Material Theming](https://bit.ly/2NpMeVH)|
