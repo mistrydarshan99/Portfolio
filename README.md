@@ -137,6 +137,16 @@ the option to use the gradle wrapper
 |[CircleImageView](https://bit.ly/1MlTaA6)|[Dynamic Links](https://bit.ly/2GrEOwL)||
 |[SDP - Scalable Size Unit](https://bit.ly/2T9wlYZ)|[App Indexing](https://bit.ly/2Tcy9jP)||
 
+## Applied Best Practices
+
+| Live Data & ViewModel |
+|:---|
+| Title | Link |
+|:----|:----|
+| **ViewModels and LiveData: Patterns + AntiPatterns** | <a href="https://bit.ly/2Iy0psU" target="_blank">Link</a>|
+| **LiveData with SnackBar, Navigation and other events** | <a href="https://bit.ly/2QslbgB" target="_blank">Link</a>|
+| **LiveData beyond the ViewModel** | <a href="https://bit.ly/2H133oY" target="_blank">Link</a>|
+
 ## Project Maintained By
 
 <img src="https://firebasestorage.googleapis.com/v0/b/portfolio-app-147b5.appspot.com/o/pro.png?alt=media&token=f10a1d13-5ffb-46ed-9460-1bdb966365fe" align="left" width="60" hspace="10" vspace="10">
