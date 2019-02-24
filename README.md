@@ -6,7 +6,7 @@
 ## A personal portfolio app
 
 <img src="https://firebasestorage.googleapis.com/v0/b/portfolio-app-147b5.appspot.com/o/resume-app-icon.png?alt=media&token=d21cdf74-ba02-4292-a646-ddca47238c24" align="left" width="200" hspace="10" vspace="10">
-I am an Android Developer and seeking opportunities where I can make an impact through design and development. I have two years of experience in Kotlin, Java, and published four apps on the Google Play Store. I am up to date with the latest technologies.<br/>
+👋Hello, My name is Alex, and I'm an Android Developer with two years of experience in Kotlin, Java, and published two apps on the Google Play Store. This my portfolio app for Kotlin - Android Jetpack Components and upto date third party libraries.<br/>
 <br/>
 <a href="https://tumur.me/about.html" taget="_blank">Read more</a>
 <br/>
