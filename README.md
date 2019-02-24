@@ -107,8 +107,8 @@ the option to use the gradle wrapper
 |:-------------------|:------------------------|:---------|:---------|
 |[Appcompat](https://bit.ly/2NuMMK8)|[Data Binding](https://bit.ly/2GIx8KE)|[Sharing](https://bit.ly/2N6AhTX)|[Constraint Layout](https://bit.ly/2tBwOVu)|
 |[Android KTX](https://bit.ly/2EtrEB6)|[LiveData](https://bit.ly/2IAnewp)|[Preferences](https://bit.ly/2TcvKWl)|[Fragment](https://bit.ly/2LKTfPd)|
-||[Lifecycles](https://bit.ly/2E7ackq)|[Media & Playback](https://bit.ly/2IAx3tY)|[Android Acessibility Guideline](https://bit.ly/2AfIFvN)|
-||[Navigation](https://bit.ly/2NLl1MC)||[Material Design Guideline](https://bit.ly/2VdJ6io)|
+|[Multidex](https://bit.ly/2qnmlL1)|[Lifecycles](https://bit.ly/2E7ackq)|[Media & Playback](https://bit.ly/2IAx3tY)|[Android Acessibility Guideline](https://bit.ly/2AfIFvN)|
+|[Test](https://bit.ly/2GIIOgo)|[Navigation](https://bit.ly/2NLl1MC)||[Material Design Guideline](https://bit.ly/2VdJ6io)|
 ||[Paging](https://bit.ly/2IAnVWx)||[Material Theming](https://bit.ly/2NpMeVH)|
 ||[Room](https://bit.ly/2lXfwOX)|||
 ||[ViewModel](https://bit.ly/2H0vRh3)|||
