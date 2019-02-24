@@ -139,13 +139,11 @@ the option to use the gradle wrapper
 
 ## Applied Best Practices
 
-| Live Data & ViewModel | |
+| Nr | 1.Live Data & ViewModel |
 |:---|:---|
-| Title | Link |
-|:----|:----|
-| **ViewModels and LiveData: Patterns + AntiPatterns** | <a href="https://bit.ly/2Iy0psU" target="_blank">Link</a>|
-| **LiveData with SnackBar, Navigation and other events** | <a href="https://bit.ly/2QslbgB" target="_blank">Link</a>|
-| **LiveData beyond the ViewModel** | <a href="https://bit.ly/2H133oY" target="_blank">Link</a>|
+| 1.1 | <a href="https://bit.ly/2Iy0psU" target="_blank">ViewModels and LiveData: Patterns + AntiPatterns</a> |
+| 1.2 | <a href="https://bit.ly/2QslbgB" target="_blank">LiveData with SnackBar, Navigation and other events</a> |
+| 1.3 | <a href="https://bit.ly/2H133oY" target="_blank">LiveData beyond the ViewModel</a> |
 
 ## Project Maintained By
 
