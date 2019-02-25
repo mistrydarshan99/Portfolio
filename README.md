@@ -140,6 +140,7 @@ the option to use the gradle wrapper
 |[Shimmer](https://bit.ly/2V63ZNq)|[Remote Config](https://bit.ly/2IzWufd)||
 |[CircleImageView](https://bit.ly/1MlTaA6)|[Dynamic Links](https://bit.ly/2GrEOwL)||
 |[SDP - Scalable Size Unit](https://bit.ly/2T9wlYZ)|[App Indexing](https://bit.ly/2Tcy9jP)||
+|[Gradle Versions Plugin](https://bit.ly/1FtgBgA)|||
 
 ## Applied Best Practices
 
