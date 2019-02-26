@@ -146,6 +146,9 @@ the option to use the gradle wrapper
 
 <em>A special thanks to the authors who shared following posts, they were a great resource during my learning 🙌🏻</em>
 
+### Kotlin
+* <a href="https://bit.ly/2Stik3R" target="_blank">Kotlin Null Safety Best Practices</a>
+
 ### Live Data & ViewModel
 * <a href="https://bit.ly/2Iy0psU" target="_blank">ViewModels and LiveData: Patterns + AntiPatterns</a>
 * <a href="https://bit.ly/2QslbgB" target="_blank">LiveData with SnackBar, Navigation and other events</a>
