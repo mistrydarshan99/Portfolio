@@ -150,6 +150,7 @@ the option to use the gradle wrapper
 * <a href="https://bit.ly/2Stik3R" target="_blank">Kotlin Null Safety Best Practices</a>
 
 ### Live Data & ViewModel
+* <a href="https://bit.ly/2To47cV" target="_blank">Fun with LiveData (Android Dev Summit '18)</a>
 * <a href="https://bit.ly/2Iy0psU" target="_blank">ViewModels and LiveData: Patterns + AntiPatterns</a>
 * <a href="https://bit.ly/2QslbgB" target="_blank">LiveData with SnackBar, Navigation and other events</a>
 * <a href="https://bit.ly/2H133oY" target="_blank">LiveData beyond the ViewModel</a>
@@ -169,6 +170,8 @@ the option to use the gradle wrapper
 * <a href="https://bit.ly/2Nrr1e7" target="_blank">Unlock your Android ViewModel power with Koin</a>
 
 ### Coroutines
+* <a href="https://bit.ly/2TpQ06Q" target="_blank">Android Suspenders (Android Dev Summit '18)</a>
+* <a href="https://bit.ly/2UdlyKy" target="_blank">Kotlin Coroutines: Beyond async/await (Droidcon NYC 2018)</a>
 * <a href="https://bit.ly/2XlDiW8" target="_blank">Android Coroutine Recipes</a>
 * <a href="https://bit.ly/2SrVt8Y" target="_blank">Kotlin Coroutines patterns & anti-patterns</a>
 * <a href="https://bit.ly/2SoioSe" target="_blank">Android Networking in 2019 — Retrofit with Kotlin’s Coroutines</a>
