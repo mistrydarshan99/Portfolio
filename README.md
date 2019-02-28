@@ -142,7 +142,7 @@ the option to use the gradle wrapper
 |[SDP - Scalable Size Unit](https://bit.ly/2T9wlYZ)|[App Indexing](https://bit.ly/2Tcy9jP)||
 |[Gradle Versions Plugin](https://bit.ly/1FtgBgA)|||
 
-## Ressources & Best Practices
+## Resources & Best Practices
 
 <em>A special thanks to the authors who shared following posts, they were a great resource during my learning 🙌🏻</em>
 
