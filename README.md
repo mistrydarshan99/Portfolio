@@ -149,6 +149,9 @@ the option to use the gradle wrapper
 ### Kotlin
 * <a href="https://bit.ly/2Stik3R" target="_blank">Kotlin Null Safety Best Practices</a>
 
+### Navigation Controller: Single Activity
+* <a href="https://bit.ly/2Sz8mOu" target="_blank">Single Activity: Why, When, and How (Android Dev Summit '18)</a>
+
 ### Live Data & ViewModel
 * <a href="https://bit.ly/2To47cV" target="_blank">Fun with LiveData (Android Dev Summit '18)</a>
 * <a href="https://bit.ly/2Iy0psU" target="_blank">ViewModels and LiveData: Patterns + AntiPatterns</a>
@@ -156,18 +159,34 @@ the option to use the gradle wrapper
 * <a href="https://bit.ly/2H133oY" target="_blank">LiveData beyond the ViewModel</a>
 
 ### Room
+* <a href="https://bit.ly/2EjIbGp" target="_blank">The Room in the House (Android Dev Summit '18)</a>
+* <a href="https://bit.ly/2VskVgi" target="_blank">Course: Storing Data in Android with Room(Caster.io)</a>
 * <a href="https://bit.ly/2E8o51R" target="_blank">7 Pro-tips for Room</a>
 * <a href="https://bit.ly/2VhVU7g" target="_blank">Room 🔗 Coroutines</a>
+* <a href="http://bit.ly/2XuIHtW" target="_blank">Populating Room Database with WorkManager sample app</a>
+* <a href="http://bit.ly/2NA5ShV" target="_blank">Room Persistence Library with Coroutines</a>
+* <a href="http://bit.ly/2EFtKhd" target="_blank">Dependency Injection with KOIN to Androidx Jetpack</a>
 
 ### DataBinding
+* <a href="https://bit.ly/2ISEooO" target="_blank">Modern Data Binding(Droidcon Italy 2018)</a>
+* <a href="https://bit.ly/2EBBP6s" target="_blank">Level Up with Data Binding</a>
 * <a href="https://bit.ly/2SmwyUc" target="_blank">Data Binding — Lessons Learnt</a>
 * <a href="https://bit.ly/2UepFpM" target="_blank">Databinding in Kotlin World (Video)</a>
 * <a href="https://bit.ly/2BWoSCI" target="_blank">Databinding in Kotlin World (Slides)</a>
 * <a href="https://bit.ly/2VllLLQ" target="_blank">Leveraging Android Data Binding with Kotlin</a>
 
+### Constraintlayouts & Motionlayout
+* <a href="https://bit.ly/2IJbBmD" target="_blank">ConstraintLayout Deep Dive (Android Dev Summit '18)</a>
+* <a href="https://bit.ly/2HdY5Fx" target="_blank">Deep dive into MotionLayout (DroidKaigi 2019)</a>
+* <a href="https://bit.ly/2Sx8Cxl" target="_blank">MotionLayout / Constraint Layout Samples</a>
+* <a href="https://medium.com/snapp-mobile/pull-the-keytrigger-with-motionlayout-e2e7e73d1dbb" target="_blank">Pull the KeyTrigger with MotionLayout</a>
+* <a href="https://bit.ly/2tRcGPj" target="_blank">Android Fundamentals: ConstraintLayout(Pluralsight)</a>
+* <a href="https://bit.ly/2BXPQtE" target="_blank">Android Motion Layout tutorial – Collapsing view</a>
+
 ### Koin
 * <a href="https://bit.ly/2E7w3YP" target="_blank">Painless Android testing with Room & Koin</a>
 * <a href="https://bit.ly/2Nrr1e7" target="_blank">Unlock your Android ViewModel power with Koin</a>
+* <a href="https://bit.ly/2Vsvlwe" target="_blank">Course: Koin(Caster.io)</a>
 
 ### Coroutines
 * <a href="https://bit.ly/2TpQ06Q" target="_blank">Android Suspenders (Android Dev Summit '18)</a>
@@ -176,7 +195,10 @@ the option to use the gradle wrapper
 * <a href="https://bit.ly/2SrVt8Y" target="_blank">Kotlin Coroutines patterns & anti-patterns</a>
 * <a href="https://bit.ly/2SoioSe" target="_blank">Android Networking in 2019 — Retrofit with Kotlin’s Coroutines</a>
 * <a href="https://bit.ly/2EeC7Pg" target="_blank">The reason to avoid GlobalScope</a>
+* <a href="https://bit.ly/2BZIs0G" target="_blank">Launching a Kotlin Coroutine for immediate execution on the Main thread</a>
 
+### WorkManager
+* <a href="http://bit.ly/2EkJyEF" target="_blank">Working with WorkManager (Android Dev Summit '18)</a>
 
 ### Animation
 * <a href="https://bit.ly/2VgM9WZ" target="_blank">Re-animation</a>
@@ -185,9 +207,31 @@ the option to use the gradle wrapper
 * <a href="https://bit.ly/2m8PVCy" target="_blank">Introduction to MotionLayout</a>
 * <a href="https://bit.ly/2tAzToD" target="_blank">Defining motion paths in MotionLayout</a>
 
+### Paging
+* <a href="https://bit.ly/2ElLa17" target="_blank">Android Jetpack: manage infinite lists with RecyclerView and Paging (Google I/O '18)</a>
+* <a href="" target="_blank"></a>
+* <a href="https://bit.ly/2ThdlHV" target="_blank">Playing with Paging Library, Retrofit, Coroutines, Koin & Testing.</a>
+* <a href="http://bit.ly/2NylGBG" target="_blank">7 steps to implement Paging library in Android</a>
+* <a href="http://bit.ly/2tEZ0qq" target="_blank">Simple intro for Rest-Api loading of json data into recyclerview using Kotlin</a>
+* <a href="http://bit.ly/2T2SU22" target="_blank">First Java MVVM project that includes: Paging library, ViewModel, LiveData, Room and Retrofit</a>
+* <a href="http://bit.ly/2IIxaUC" target="_blank">The Movie Datbase</a>
+* <a href="" target="_blank"></a>
+* <a href="" target="_blank"></a>
+
+### Android Accessibility
+* <a href="https://bit.ly/2Vu4RL3" target="_blank">Course: Android App Development: Accessibility(LinkedIn Learning)</a>
+* <a href="http://bit.ly/2H3QNUF" target="_blank">Making Android Accessibility Easy (Android Dev Summit '18)</a>
+
+
+### Preferences
+* <a href="http://bit.ly/2EnwVbQ" target="_blank">Preferential Practices for Preferences (Android Dev Summit '18)</a>
+
+### Material Design & Theme
+* <a href="http://bit.ly/2Ej7Wqh" target="_blank">The Components of Material Design (Android Dev Summit '18)</a>
+* <a href="http://bit.ly/2NAhzFb" target="_blank">Best Practices for Themes and Styles (Android Dev Summit '18)</a>
+* <a href="http://bit.ly/2H5WXDD" target="_blank">Use Android Text Like a Pro (Android Dev Summit '18)</a>
 
 ### Other
-* <a href="https://bit.ly/2ThdlHV" target="_blank">Playing with Paging Library, Retrofit, Coroutines, Koin & Testing.</a>
 * <a href="https://bit.ly/2H1f1yE" target="_blank">Kotlin + buildSrc for Better Gradle Dependency Management</a>
 
 ## Project Maintained By
