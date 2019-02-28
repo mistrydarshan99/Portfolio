@@ -160,6 +160,9 @@ the option to use the gradle wrapper
 
 ### DataBinding
 * <a href="https://bit.ly/2SmwyUc" target="_blank">Data Binding — Lessons Learnt</a>
+* <a href="https://bit.ly/2UepFpM" target="_blank">Databinding in Kotlin World (Video)</a>
+* <a href="https://bit.ly/2BWoSCI" target="_blank">Databinding in Kotlin World (Slides)</a>
+* <a href="https://bit.ly/2VllLLQ" target="_blank">Leveraging Android Data Binding with Kotlin</a>
 
 ### Koin
 * <a href="https://bit.ly/2E7w3YP" target="_blank">Painless Android testing with Room & Koin</a>
