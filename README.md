@@ -209,14 +209,11 @@ the option to use the gradle wrapper
 
 ### Paging
 * <a href="https://bit.ly/2ElLa17" target="_blank">Android Jetpack: manage infinite lists with RecyclerView and Paging (Google I/O '18)</a>
-* <a href="" target="_blank"></a>
 * <a href="https://bit.ly/2ThdlHV" target="_blank">Playing with Paging Library, Retrofit, Coroutines, Koin & Testing.</a>
 * <a href="http://bit.ly/2NylGBG" target="_blank">7 steps to implement Paging library in Android</a>
 * <a href="http://bit.ly/2tEZ0qq" target="_blank">Simple intro for Rest-Api loading of json data into recyclerview using Kotlin</a>
 * <a href="http://bit.ly/2T2SU22" target="_blank">First Java MVVM project that includes: Paging library, ViewModel, LiveData, Room and Retrofit</a>
 * <a href="http://bit.ly/2IIxaUC" target="_blank">The Movie Datbase</a>
-* <a href="" target="_blank"></a>
-* <a href="" target="_blank"></a>
 
 ### Android Accessibility
 * <a href="https://bit.ly/2Vu4RL3" target="_blank">Course: Android App Development: Accessibility(LinkedIn Learning)</a>
