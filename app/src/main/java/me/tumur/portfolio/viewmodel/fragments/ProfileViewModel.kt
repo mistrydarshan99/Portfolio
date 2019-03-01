@@ -4,17 +4,17 @@ import androidx.lifecycle.*
 import kotlinx.coroutines.*
 import me.tumur.portfolio.data.model.ProfileModel
 import me.tumur.portfolio.data.model.SocialModel
-import me.tumur.portfolio.helpers.viewModel.VmHelpers
 import me.tumur.portfolio.repository.firebase.RemoteConfig
 import me.tumur.portfolio.repository.profile.ProfileRepo
+import me.tumur.portfolio.utilities.cache.CacheDate
 
 class ProfileViewModel(
-    private val condition: VmHelpers,
+    private val cache: CacheDate,
     private val repo: ProfileRepo,
     private val fb: RemoteConfig,
     loading: Int,
     loaded: Int,
-    cacheExpired: Int,
+    expired: Int,
     private val profileFragment: String
 ) : ViewModel() {
 
@@ -23,7 +23,7 @@ class ProfileViewModel(
     private val uiScope = CoroutineScope(Dispatchers.Main + job)
 
     // UI profile data
-    val profile: LiveData<ProfileModel> = Transformations.map(repo.getProfile()) { data -> loadProfile(data) }
+    val profile: LiveData<ProfileModel> by lazy { Transformations.map(repo.getProfile()) { data -> loadProfile(data) } }
     val greeting: LiveData<String>
     val avatar = MutableLiveData<String>()
     val name: LiveData<String>
@@ -32,7 +32,7 @@ class ProfileViewModel(
     val readMore = MutableLiveData<String>()
 
 
-    val social: LiveData<List<SocialModel>> = Transformations.map(repo.getSocial()) { data -> loadSocial(data) }
+    val social: LiveData<List<SocialModel>> by lazy { Transformations.map(repo.getSocial()) { data -> loadSocial(data) } }
 
     // UI state
     val uiState = MediatorLiveData<Int>()
@@ -84,10 +84,10 @@ class ProfileViewModel(
         showMessage.addSource(isNetworkLoaded) { status -> if (status) showMessage.value = true }
 
         // Check network and cache date
-        val status = condition.checkCondition(profileFragment)
+        val status = cache.getCacheDate(profileFragment)
         when (status) {
             // Fetch network data and save into db
-            cacheExpired -> loadNetworkData()
+            expired -> loadNetworkData()
         }
 
         //showTest.addSource(profile) {result -> if(result != null) showTest.value = result.email}
@@ -120,7 +120,7 @@ class ProfileViewModel(
 
     // Set cache date
     private fun setCacheDate() {
-        condition.setCacheDate(profileFragment)
+        cache.setCacheDate(profileFragment)
     }
 
     // Cancel all coroutines

@@ -16,17 +16,17 @@ import me.tumur.portfolio.data.dao.ProfileDao
 import me.tumur.portfolio.data.dao.SocialDao
 import me.tumur.portfolio.data.db.AppDatabase
 import me.tumur.portfolio.data.db.PopulateDb
-import me.tumur.portfolio.helpers.network.NetworkCheck
-import me.tumur.portfolio.helpers.network.NetworkCheckImp
-import me.tumur.portfolio.helpers.preference.SharedPref
-import me.tumur.portfolio.helpers.preference.SharedPrefImp
-import me.tumur.portfolio.helpers.viewModel.VmHelpers
-import me.tumur.portfolio.helpers.viewModel.VmHelpersImp
 import me.tumur.portfolio.repository.firebase.RemoteConfig
 import me.tumur.portfolio.repository.firebase.RemoteConfigImp
 import me.tumur.portfolio.repository.profile.ProfileRepo
 import me.tumur.portfolio.repository.profile.ProfileRepoImp
 import me.tumur.portfolio.repository.retrofit.ApiPortfolio
+import me.tumur.portfolio.utilities.cache.CacheDate
+import me.tumur.portfolio.utilities.cache.CacheDateImp
+import me.tumur.portfolio.utilities.network.NetworkCheck
+import me.tumur.portfolio.utilities.network.NetworkCheckImp
+import me.tumur.portfolio.utilities.preference.SharedPref
+import me.tumur.portfolio.utilities.preference.SharedPrefImp
 import me.tumur.portfolio.viewmodel.activities.MainViewModel
 import me.tumur.portfolio.viewmodel.activities.SplashViewModel
 import me.tumur.portfolio.viewmodel.fragments.ProfileViewModel
@@ -51,7 +51,7 @@ val viewModelModule = module {
     viewModel { MainViewModel(get() as RemoteConfig) }
     viewModel {
         ProfileViewModel(
-            get() as VmHelpers,
+            get() as CacheDate,
             get() as ProfileRepo,
             get() as RemoteConfig,
             getProperty("DB_LOADING"),
@@ -77,7 +77,7 @@ val firebaseModule = module {
     single { createFirebaseAnalytics(get()) }
 }
 
-val helpersModule = module {
+val utilitiesModule = module {
     single<SharedPref> {
         SharedPrefImp(
             get(),
@@ -89,10 +89,9 @@ val helpersModule = module {
         )
     }
     factory<NetworkCheck> { NetworkCheckImp(get()) }
-    single<VmHelpers> {
-        VmHelpersImp(
+    single<CacheDate> {
+        CacheDateImp(
             get() as SharedPref,
-            get() as NetworkCheck,
             getProperty("PRF_CACHE_EXPIRED"),
             getProperty("PRF_CACHE_LIMIT"),
             getProperty("FR_PROFILE"),
@@ -129,7 +128,7 @@ val networkModule = module {
 
 
 // Gather all app modules
-val appModule = listOf(viewModelModule, firebaseModule, helpersModule, databaseModule, networkModule)
+val appModule = listOf(viewModelModule, firebaseModule, utilitiesModule, databaseModule, networkModule)
 
 
 // Create OkHttp and Retrofit instances

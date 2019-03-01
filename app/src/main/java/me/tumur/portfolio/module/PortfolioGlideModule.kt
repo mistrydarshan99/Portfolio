@@ -1,4 +1,4 @@
-package me.tumur.portfolio.helpers.module
+package me.tumur.portfolio.module
 
 import android.content.Context
 import com.bumptech.glide.GlideBuilder

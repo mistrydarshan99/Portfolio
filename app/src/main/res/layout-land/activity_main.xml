@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <layout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         xmlns:bind="http://schemas.android.com/apk/res-auto">
     <data>
-        <variable name="mainData" type="me.tumur.portfolio.viewmodel.activities.MainViewModel"/>
+        <variable name="model" type="me.tumur.portfolio.viewmodel.activities.MainViewModel"/>
     </data>
 
     <androidx.drawerlayout.widget.DrawerLayout
@@ -60,7 +59,7 @@
 
             <include
                     layout="@layout/item_drawer_header"
-                    bind:sideMenuHeaderData="@{mainData}"/>
+                    bind:headerModel="@{model}"/>
 
         </com.google.android.material.navigation.NavigationView>
 

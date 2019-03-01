@@ -1,4 +1,4 @@
-package me.tumur.portfolio.helpers.network
+package me.tumur.portfolio.utilities.network
 
 import android.content.Context
 import android.net.ConnectivityManager

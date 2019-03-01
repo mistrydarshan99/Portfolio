@@ -133,10 +133,18 @@
         <item name="android:textAlignment">center</item>
     </style>
 
+    <!-- Unimportant for accessibility -->
     <style name="UnImportantForAccessibilty">
         <item name="android:clickable">false</item>
         <item name="android:focusable">false</item>
         <item name="android:importantForAccessibility">no</item>
+    </style>
+
+    <!-- Important for accessibility single elements -->
+    <style name="ForAccessibilty">
+        <item name="android:clickable">false</item>
+        <item name="android:focusable">true</item>
+        <item name="android:importantForAccessibility">yes</item>
     </style>
 
 </resources>

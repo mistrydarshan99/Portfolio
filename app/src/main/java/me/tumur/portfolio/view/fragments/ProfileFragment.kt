@@ -17,14 +17,21 @@ class ProfileFragment : Fragment() {
         fun newInstance() = ProfileFragment()
     }
 
-    private val vModel: ProfileViewModel by viewModel()
+    // Inject viewModel
+    private val model: ProfileViewModel by viewModel()
+
+    // Databinding
     private lateinit var binding: FragmentProfileBinding
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+
+        // Get databinding
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_profile, container, false)
+
+        // Bind data to UI
         binding.apply {
             this.lifecycleOwner = this@ProfileFragment
-            this.data = vModel
+            this.model = model
         }
         return binding.root
     }

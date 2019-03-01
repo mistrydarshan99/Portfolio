@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <layout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         tools:context=".view.fragments.ProfileFragment">
     <data>
-        <variable name="headerData" type="me.tumur.portfolio.viewmodel.fragments.ProfileViewModel"/>
+        <variable name="headerModel" type="me.tumur.portfolio.viewmodel.fragments.ProfileViewModel"/>
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -23,7 +22,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintBottom_toTopOf="@+id/cv_header"
-                android:text="@{headerData.greeting}"
+                android:text="@{headerModel.greeting}"
                 tools:text="@sample/data.json/profile/greeting"/>
 
 
@@ -55,7 +54,9 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintBottom_toTopOf="@+id/tv_name"
-                        app:avatarUrl="@{headerData.avatar}"
+                        app:imageUrl="@{headerModel.avatar}"
+                        app:placeholder="@{@drawable/ic_profile_placeholder}"
+                        app:error="@{@drawable/ic_error}"
                         app:civ_border_width="@dimen/_2sdp"
                         app:civ_border_color="@color/colorBorder"
                         tools:src="@tools:sample/avatars"/>
@@ -72,7 +73,7 @@
                         app:layout_constraintTop_toBottomOf="@+id/iv_avatar"
                         app:layout_constraintBottom_toTopOf="@+id/tv_title"
                         android:textAppearance="@style/ProfileName"
-                        android:text="@{headerData.name}"
+                        android:text="@{headerModel.name}"
                         tools:text="@sample/data.json/profile/name"/>
 
                 <androidx.appcompat.widget.AppCompatTextView
@@ -85,7 +86,7 @@
                         app:layout_constraintTop_toBottomOf="@+id/tv_name"
                         app:layout_constraintBottom_toTopOf="@+id/tv_summary"
                         android:textAppearance="@style/ProfileTitle"
-                        android:text="@{headerData.title}"
+                        android:text="@{headerModel.title}"
                         tools:text="@sample/data.json/profile/title"/>
 
                 <androidx.appcompat.widget.AppCompatTextView
@@ -97,7 +98,7 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/tv_title"
                         app:layout_constraintBottom_toTopOf="@+id/btn_more"
-                        android:text="@{headerData.summary}"
+                        android:text="@{headerModel.summary}"
                         tools:text="@sample/data.json/profile/summary"/>
 
                 <com.google.android.material.button.MaterialButton
@@ -109,7 +110,7 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintBottom_toBottomOf="parent"
-                        android:text="@{headerData.readMore}"
+                        android:text="@{headerModel.readMore}"
                         tools:text="@sample/data.json/profile/more"/>
 
 

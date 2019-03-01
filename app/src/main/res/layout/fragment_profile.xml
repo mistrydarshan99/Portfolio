@@ -4,7 +4,7 @@
         xmlns:bind="http://schemas.android.com/apk/res-auto">
     <data>
         <import type="android.view.View"/>
-        <variable name="data" type="me.tumur.portfolio.viewmodel.fragments.ProfileViewModel"/>
+        <variable name="model" type="me.tumur.portfolio.viewmodel.fragments.ProfileViewModel"/>
     </data>
 
     <androidx.core.widget.NestedScrollView
@@ -23,18 +23,16 @@
             <include android:id="@+id/profile_header"
                      android:layout_width="match_parent"
                      android:layout_height="wrap_content"
-                     app:hideIfFalse=""
                      layout="@layout/include_profile_header"
                      app:layout_constraintStart_toStartOf="parent"
                      app:layout_constraintEnd_toEndOf="parent"
                      app:layout_constraintTop_toTopOf="parent"
-                     bind:headerData="@{data}"/>
+                     bind:headerModel="@{model}"/>
 
             <include android:id="@+id/shimmer_profile_header"
                      tools:visibility="invisible"
                      android:layout_width="match_parent"
                      android:layout_height="wrap_content"
-                     app:hideIfFalse=""
                      app:layout_constraintStart_toStartOf="parent"
                      app:layout_constraintEnd_toEndOf="parent"
                      app:layout_constraintTop_toTopOf="parent"

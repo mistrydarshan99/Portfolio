@@ -1,4 +1,4 @@
-package me.tumur.portfolio.helpers.network
+package me.tumur.portfolio.utilities.network
 
 interface NetworkCheck {
 

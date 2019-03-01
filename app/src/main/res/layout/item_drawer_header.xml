@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <layout
         xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
         xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         tools:context=".view.activities.MainActivity">
     <data>
-        <variable name="sideMenuHeaderData" type="me.tumur.portfolio.viewmodel.activities.MainViewModel"/>
+        <variable name="headerModel" type="me.tumur.portfolio.viewmodel.activities.MainViewModel"/>
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -26,8 +25,10 @@
                 app:layout_constraintVertical_chainStyle="packed"
                 app:civ_border_width="@dimen/_2sdp"
                 app:civ_border_color="@color/colorBorder"
-                tools:src="@tools:sample/avatars"
-                app:avatarUrl="@{sideMenuHeaderData.avatar}"/>
+                app:imageUrl="@{headerModel.avatar}"
+                app:placeholder="@{@drawable/ic_profile_placeholder}"
+                app:error="@{@drawable/ic_error}"
+                tools:src="@tools:sample/avatars"/>
 
         <TextView
                 style="@style/DrawerHeaderName"
@@ -40,7 +41,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/iv_avatar"
                 android:textColor="@android:color/white"
-                android:text="@{sideMenuHeaderData.name}"
+                android:text="@{headerModel.name}"
                 tools:text="@sample/data.json/drawer_header/name"/>
 
         <TextView
@@ -53,7 +54,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tv_name"
-                android:text="@{sideMenuHeaderData.title}"
+                android:text="@{headerModel.title}"
                 tools:text="@sample/data.json/drawer_header/title"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

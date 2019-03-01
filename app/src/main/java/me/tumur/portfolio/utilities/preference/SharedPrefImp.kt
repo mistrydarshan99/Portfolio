@@ -1,4 +1,4 @@
-package me.tumur.portfolio.helpers.preference
+package me.tumur.portfolio.utilities.preference
 
 import android.content.Context
 import android.content.SharedPreferences
