@@ -80,6 +80,9 @@ dependencies {
 
     // Architecture components
     implementation deps.androidx_lifecycles             // Lifecycles - ViewModel and LiveData
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.0.0'
     kapt deps.lifecycles_compiler                       // Lifecycles annotation
     implementation deps.androidx_room                   // Room
     kapt deps.room_compiler                             // Room annotation
@@ -103,7 +106,7 @@ dependencies {
     implementation deps.okhttp3                         // OkHttp3
     implementation deps.okhttp3_interceptor             // OkHttp3 logging interceptor
     implementation deps.glide                           // Glide
-    annotationProcessor deps.glide_annotation           // Glide Annotation
+    kapt deps.glide_annotation           // Glide Annotation
     implementation deps.koin                            // Koin dependency injection
     implementation deps.koin_viewmodel                  // Koin AndroidX viewmodel
     implementation deps.koin_scope                      // Koin Android scope

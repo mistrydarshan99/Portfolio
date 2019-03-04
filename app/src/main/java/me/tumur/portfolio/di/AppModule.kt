@@ -42,8 +42,9 @@ import java.util.concurrent.TimeUnit
 val viewModelModule = module {
     viewModel {
         SplashViewModel(
-            getProperty("ANIM_MAX"),
+            getProperty("ANIM_LOGO"),
             getProperty("ANIM_MIN"),
+            getProperty("ANIM_MAX"),
             get() as SharedPref,
             get() as ProfileRepo
         )

@@ -1,81 +1,63 @@
 package me.tumur.portfolio.viewmodel.activities
 
-import androidx.lifecycle.MediatorLiveData
 import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.SupervisorJob
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
+import me.tumur.portfolio.coroutines.ScopedViewModel
 import me.tumur.portfolio.repository.profile.ProfileRepo
 import me.tumur.portfolio.utilities.preference.SharedPref
-import timber.log.Timber
 
 class SplashViewModel(
-    private val max: Int,
-    private val min: Int,
+    private val logo: Long,
+    private val min: Long,
+    private val max: Long,
     private val pref: SharedPref,
     private val repo: ProfileRepo
-) : ViewModel() {
+) : ScopedViewModel() {
 
     // Shared preference
-    private val firstRun = MutableLiveData<Boolean>().apply { value = pref.getFirstRun() }
+    private val isFirst by lazy { pref.getFirstRun() }
 
-    // Coroutines
-    private val job = SupervisorJob()
-    private val bgScope = CoroutineScope(Dispatchers.IO + job)
+    // Get max or min value for loader animation
+    private val duration by lazy { if (isFirst) max else min }
 
-    // Icons
-    val iconOne = MutableLiveData<Boolean>().apply { value = false }
-    private val iconTwo = MutableLiveData<Boolean>().apply { value = false }
-    private val icons = MediatorLiveData<Int>().apply { value = 0 }
+    // State for logo and loader animation
+    val invisible = MutableLiveData<Boolean>().apply { value = true }
 
-
-    // Animation counter
-    private val animation = MutableLiveData<Int>().apply { value = 0 }
+    // State for routeToMainActivity
+    val route = MutableLiveData<Boolean>().apply { value = false }
 
     init {
-        // Initialize shared preference variables
-        animation.apply { value = if (firstRun.value!!) max else min }
-
-        // Trigger for pre-populating database
+        // Pre-populate Db
         checkDbStatus()
-
-        // Initialize observer
-        icons.addSource(iconOne) { status -> if (status) icons.value = icons.value?.inc() }
-        icons.addSource(iconTwo) { status -> if (status) icons.value = icons.value?.inc() }
+        // Delay
+        delayForAnimation()
     }
 
-    // Trigger for pre-populating database
+    // Animation management
+    private fun delayForAnimation() = uiScope.launch {
+
+        delay(logo)             // Delay for logo animation
+        setAnimation(false)     // Show loader animation
+
+        delay(duration)         // Delay for loader animation
+        setFirstRun()           // Check shared preference for first run, if true set false
+        route.value = true      // Route to MainActivity
+    }
+
+    // Show loader animation
+    private fun setAnimation(value: Boolean) {
+        invisible.value = value
+    }
+
+    // Fake Dao invoke for pre-populating database
     private fun checkDbStatus() = bgScope.launch {
-        val result = repo.getProfileRows()
-        Timber.tag("DatabasePop").d(result.toString())
-
+        repo.getProfileRows()
     }
 
-    // Getter
-    fun getIconOne() = iconOne.value
-
-    fun getIconTwo() = iconTwo.value
-    fun getIcons() = icons
-    fun getAnimation() = animation.value
-
-    // Setter
-    fun setIconOne(status: Boolean) {
-        iconOne.value = status
-    }
-
-    fun setIconTwo(status: Boolean) {
-        iconTwo.value = status
-    }
-
-    fun decAnimation() {
-        (animation.value!! > 0).let { animation.value = animation.value?.dec() }
-    }
-
-    fun setFirstRun(status: Boolean) {
-        firstRun.value = status
-        pref.setFirstRun()
+    // Set true for first run
+    fun setFirstRun() {
+        if (isFirst) pref.setFirstRun()
     }
 
 }

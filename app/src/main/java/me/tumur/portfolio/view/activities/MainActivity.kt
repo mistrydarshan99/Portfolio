@@ -4,13 +4,13 @@ import android.content.res.Configuration
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
+import androidx.databinding.DataBindingUtil
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import androidx.navigation.ui.NavigationUI
 import kotlinx.android.synthetic.main.activity_main.*
 import me.tumur.portfolio.R
 import me.tumur.portfolio.databinding.ActivityMainBinding
-import me.tumur.portfolio.extentions.activityBinding
 import me.tumur.portfolio.viewmodel.activities.MainViewModel
 import org.koin.androidx.viewmodel.ext.viewModel
 
@@ -18,10 +18,15 @@ import org.koin.androidx.viewmodel.ext.viewModel
 class MainActivity : AppCompatActivity() {
 
     // Inject viewmodel
-    private val model: MainViewModel by viewModel()
+    private val vmodel: MainViewModel by viewModel()
 
     // Delegate databinding
-    private val binding by activityBinding<ActivityMainBinding>(R.layout.activity_main)
+    //private val binding by activityBinding<ActivityMainBinding>(R.layout.activity_main)
+
+    // Databinding
+    private val binding: ActivityMainBinding by lazy {
+        DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main)
+    }
 
 
     // Screen orientation
@@ -40,7 +45,7 @@ class MainActivity : AppCompatActivity() {
         // Bind data to UI
         binding.apply {
             this.lifecycleOwner = this@MainActivity
-            this.model = model
+            this.model = vmodel
         }
 
         setSupportActionBar(toolbar)

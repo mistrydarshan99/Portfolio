@@ -6,6 +6,7 @@
         tools:context=".view.activities.SplashActivity">
 
     <data>
+        <import type="me.tumur.portfolio.R" alias="R"/>
         <import type="android.view.View"/>
         <variable name="model" type="me.tumur.portfolio.viewmodel.activities.SplashViewModel"/>
     </data>
@@ -16,31 +17,34 @@
 
         <androidx.appcompat.widget.AppCompatImageView
                 style="@style/ForAccessibilty"
-                android:id="@+id/iv_icon_one"
+                android:id="@+id/iv_logo"
                 android:layout_width="@dimen/_100sdp"
                 android:layout_height="@dimen/_100sdp"
                 app:layout_constraintVertical_chainStyle="packed"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toTopOf="@+id/iv_icon_two"
+                app:layout_constraintBottom_toTopOf="@+id/iv_loader"
                 android:contentDescription="@string/cd_icon_one"
-                app:srcCompat="@drawable/ic_icon_one_placeholder_one"/>
+                app:avdIcon="@{R.drawable.avd_logo}"
+                app:loop="@{false}"
+                tools:src="@drawable/avd_logo"/>
 
         <androidx.appcompat.widget.AppCompatImageView
                 style="@style/ForAccessibilty"
-                android:id="@+id/iv_icon_two"
-                android:visibility="@{safeUnbox(model.iconOne) ? View.VISIBLE : View.INVISIBLE}"
-                tools:visibility="visible"
+                android:id="@+id/iv_loader"
                 android:layout_width="@dimen/_40sdp"
                 android:layout_height="@dimen/_40sdp"
                 android:layout_marginTop="@dimen/_10sdp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/iv_icon_one"
+                app:layout_constraintTop_toBottomOf="@+id/iv_logo"
                 app:layout_constraintBottom_toBottomOf="parent"
                 android:contentDescription="@string/cd_icon_two"
-                app:srcCompat="@drawable/ic_icon_two"/>
+                app:avdIcon="@{R.drawable.avd_loader}"
+                app:loop="@{true}"
+                app:invisible="@{model.invisible}"
+                tools:src="@drawable/avd_loader"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
