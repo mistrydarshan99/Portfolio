@@ -18,7 +18,7 @@ class ProfileFragment : Fragment() {
     }
 
     // Inject viewModel
-    private val model: ProfileViewModel by viewModel()
+    private val vmodel: ProfileViewModel by viewModel()
 
     // Databinding
     private lateinit var binding: FragmentProfileBinding
@@ -31,7 +31,7 @@ class ProfileFragment : Fragment() {
         // Bind data to UI
         binding.apply {
             this.lifecycleOwner = this@ProfileFragment
-            this.model = model
+            this.model = vmodel
         }
         return binding.root
     }

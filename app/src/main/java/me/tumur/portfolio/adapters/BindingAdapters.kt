@@ -10,7 +10,6 @@ import androidx.vectordrawable.graphics.drawable.Animatable2Compat
 import androidx.vectordrawable.graphics.drawable.AnimatedVectorDrawableCompat
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
-import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 import com.bumptech.glide.request.RequestOptions
 
 /**
@@ -30,10 +29,8 @@ fun imageUrl(imageView: ImageView, url: String?, placeholderDrawable: Drawable?,
         imageView.doOnLayout {
             Glide.with(imageView.context)
                 .load(url)
-                .apply(requestOptions)
                 .centerCrop()
                 .fitCenter()
-                .transition(DrawableTransitionOptions.withCrossFade())
                 .diskCacheStrategy(DiskCacheStrategy.ALL)
                 .into(imageView)
         }

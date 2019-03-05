@@ -1,7 +1,9 @@
 package me.tumur.portfolio.viewmodel.fragments
 
 import androidx.lifecycle.*
-import kotlinx.coroutines.*
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 import me.tumur.portfolio.data.model.ProfileModel
 import me.tumur.portfolio.data.model.SocialModel
 import me.tumur.portfolio.repository.firebase.RemoteConfig
@@ -17,10 +19,6 @@ class ProfileViewModel(
     expired: Int,
     private val profileFragment: String
 ) : ViewModel() {
-
-    // Coroutines
-    private val job = SupervisorJob()
-    private val uiScope = CoroutineScope(Dispatchers.Main + job)
 
     // UI profile data
     val profile: LiveData<ProfileModel> by lazy { Transformations.map(repo.getProfile()) { data -> loadProfile(data) } }
@@ -108,7 +106,7 @@ class ProfileViewModel(
     }
 
     // Fetch network data on background thread and save into database
-    private fun loadNetworkData() = uiScope.launch {
+    private fun loadNetworkData() = viewModelScope.launch {
         val networkFetch1 = withContext(Dispatchers.IO) { repo.loadProfileFromNetwork() }
         val networkFetch2 = withContext(Dispatchers.IO) { repo.loadSocialFromNetwork() }
         if (networkFetch1 && networkFetch2) {
@@ -121,11 +119,5 @@ class ProfileViewModel(
     // Set cache date
     private fun setCacheDate() {
         cache.setCacheDate(profileFragment)
-    }
-
-    // Cancel all coroutines
-    override fun onCleared() {
-        super.onCleared()
-        uiScope.coroutineContext.cancelChildren()
     }
 }

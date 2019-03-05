@@ -1,9 +1,11 @@
 package me.tumur.portfolio.viewmodel.activities
 
 import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
-import me.tumur.portfolio.coroutines.ScopedViewModel
 import me.tumur.portfolio.repository.profile.ProfileRepo
 import me.tumur.portfolio.utilities.preference.SharedPref
 
@@ -13,7 +15,7 @@ class SplashViewModel(
     private val max: Long,
     private val pref: SharedPref,
     private val repo: ProfileRepo
-) : ScopedViewModel() {
+) : ViewModel() {
 
     // Shared preference
     private val isFirst by lazy { pref.getFirstRun() }
@@ -35,7 +37,7 @@ class SplashViewModel(
     }
 
     // Animation management
-    private fun delayForAnimation() = uiScope.launch {
+    private fun delayForAnimation() = viewModelScope.launch {
 
         delay(logo)             // Delay for logo animation
         setAnimation(false)     // Show loader animation
@@ -51,7 +53,7 @@ class SplashViewModel(
     }
 
     // Fake Dao invoke for pre-populating database
-    private fun checkDbStatus() = bgScope.launch {
+    private fun checkDbStatus() = viewModelScope.launch(Dispatchers.IO) {
         repo.getProfileRows()
     }
 

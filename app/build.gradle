@@ -70,6 +70,7 @@ dependencies {
     // Foundation
     implementation deps.kotlin_stdlib                   // Kotlin
     implementation deps.androidx_core                   // AndroidX core
+    implementation deps.androidx_legacy                 // AndroidX legacy
     implementation deps.androidx_futures                // AndroidX futures
     implementation deps.androidx_appcompat              // Appcompat
     implementation deps.androidx_emojicompat            // Emoji
@@ -79,10 +80,8 @@ dependencies {
     implementation deps.androidx_pager                  // Viewpager
 
     // Architecture components
-    implementation deps.androidx_lifecycles             // Lifecycles - ViewModel and LiveData
-    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'
-    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.0.0'
+    implementation deps.lifecycles_viewmodel            // Lifecycles - ViewModel and LiveData
+    implementation deps.lifecycles_extension            // Lifecycles - Extension
     kapt deps.lifecycles_compiler                       // Lifecycles annotation
     implementation deps.androidx_room                   // Room
     kapt deps.room_compiler                             // Room annotation
@@ -106,7 +105,7 @@ dependencies {
     implementation deps.okhttp3                         // OkHttp3
     implementation deps.okhttp3_interceptor             // OkHttp3 logging interceptor
     implementation deps.glide                           // Glide
-    kapt deps.glide_annotation           // Glide Annotation
+    kapt deps.glide_annotation                          // Glide Annotation
     implementation deps.koin                            // Koin dependency injection
     implementation deps.koin_viewmodel                  // Koin AndroidX viewmodel
     implementation deps.koin_scope                      // Koin Android scope
