@@ -196,6 +196,7 @@ the option to use the gradle wrapper
 * <a href="https://bit.ly/2SoioSe" target="_blank">Android Networking in 2019 — Retrofit with Kotlin’s Coroutines</a>
 * <a href="https://bit.ly/2EeC7Pg" target="_blank">The reason to avoid GlobalScope</a>
 * <a href="https://bit.ly/2BZIs0G" target="_blank">Launching a Kotlin Coroutine for immediate execution on the Main thread</a>
+* <a href="http://bit.ly/2tPu7zB" target="_blank">Coroutine Support in ViewModels</a>
 
 ### WorkManager
 * <a href="http://bit.ly/2EkJyEF" target="_blank">Working with WorkManager (Android Dev Summit '18)</a>
