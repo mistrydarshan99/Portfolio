@@ -174,6 +174,7 @@ the option to use the gradle wrapper
 * <a href="https://bit.ly/2UepFpM" target="_blank">Databinding in Kotlin World (Video)</a>
 * <a href="https://bit.ly/2BWoSCI" target="_blank">Databinding in Kotlin World (Slides)</a>
 * <a href="https://bit.ly/2VllLLQ" target="_blank">Leveraging Android Data Binding with Kotlin</a>
+* <a href="http://bit.ly/2SMq8he" target="_blank">Simplifying UI States with Kotlin Sealed Classes and Data Binding</a>
 
 ### Constraintlayouts & Motionlayout
 * <a href="https://bit.ly/2IJbBmD" target="_blank">ConstraintLayout Deep Dive (Android Dev Summit '18)</a>
