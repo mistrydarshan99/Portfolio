@@ -157,6 +157,7 @@ the option to use the gradle wrapper
 * <a href="https://bit.ly/2Iy0psU" target="_blank">ViewModels and LiveData: Patterns + AntiPatterns</a>
 * <a href="https://bit.ly/2QslbgB" target="_blank">LiveData with SnackBar, Navigation and other events</a>
 * <a href="https://bit.ly/2H133oY" target="_blank">LiveData beyond the ViewModel</a>
+* <a href="http://bit.ly/2HmgTm0" target="_blank">LiveData with single events</a>
 
 ### Room
 * <a href="https://bit.ly/2EjIbGp" target="_blank">The Room in the House (Android Dev Summit '18)</a>
@@ -201,6 +202,9 @@ the option to use the gradle wrapper
 
 ### WorkManager
 * <a href="http://bit.ly/2EkJyEF" target="_blank">Working with WorkManager (Android Dev Summit '18)</a>
+* <a href="http://bit.ly/2C7zRcw" target="_blank">Introducing WorkManager</a>
+* <a href="http://bit.ly/2EOKlxQ" target="_blank">WorkManager Basics</a>
+* <a href="http://bit.ly/2J8KuBA" target="_blank">Android Jetpack WorkManager Stable Release</a>
 
 ### Animation
 * <a href="https://bit.ly/2VgM9WZ" target="_blank">Re-animation</a>
