@@ -6,7 +6,7 @@
 ## A personal portfolio app
 
 <img src="https://firebasestorage.googleapis.com/v0/b/portfolio-app-147b5.appspot.com/o/resume-app-icon.png?alt=media&token=d21cdf74-ba02-4292-a646-ddca47238c24" align="left" width="200" hspace="10" vspace="10">
-👋Hello, My name is Alex, and I'm an Android Developer with two years of experience in Kotlin, Java, and published two apps on the Google Play Store. This my portfolio app. <a href="https://tumur.me/about.html" taget="_blank">Read more about me</a><br/>
+👋Hello, My name is Tumur Bazarragchaa. You can call me Alex, and I'm an Android Developer with two years of experience in Kotlin, Java, and published two apps on the Google Play Store. This my portfolio app. <a href="https://tumur.me/about.html" taget="_blank">Read more about me</a><br/>
 <br/>
 <div style="display:flex;" >
 <a target="_blank" href="#">
