@@ -153,7 +153,7 @@ the option to use the gradle wrapper
 
 ### Navigation Controller: Single Activity
 * <a href="https://bit.ly/2Sz8mOu" target="_blank">Single Activity: Why, When, and How (Android Dev Summit '18)</a>
-* <a href="hhttp://bit.ly/2TCJHhh" target="_blank">Advanced Navigation Sample</a>
+* <a href="http://bit.ly/2TCJHhh" target="_blank">Advanced Navigation Sample</a>
 * <a href="http://bit.ly/2u6JFim" target="_blank">Master-Detail views with Navigation Components</a>
 
 ### Live Data & ViewModel
