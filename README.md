@@ -142,6 +142,7 @@ the option to use the gradle wrapper
 |[SDP - Scalable Size Unit](https://bit.ly/2T9wlYZ)|[App Indexing](https://bit.ly/2Tcy9jP)||
 |[Gradle Versions Plugin](https://bit.ly/1FtgBgA)|||
 |[Moshi](https://bit.ly/2TLu7za)|||
+|[Material View Pager Dots Indicator](http://bit.ly/2u5i0i3)|||
 
 ## Resources & Best Practices
 
@@ -152,6 +153,8 @@ the option to use the gradle wrapper
 
 ### Navigation Controller: Single Activity
 * <a href="https://bit.ly/2Sz8mOu" target="_blank">Single Activity: Why, When, and How (Android Dev Summit '18)</a>
+* <a href="hhttp://bit.ly/2TCJHhh" target="_blank">Advanced Navigation Sample</a>
+* <a href="http://bit.ly/2u6JFim" target="_blank">Master-Detail views with Navigation Components</a>
 
 ### Live Data & ViewModel
 * <a href="https://bit.ly/2To47cV" target="_blank">Fun with LiveData (Android Dev Summit '18)</a>
@@ -159,6 +162,7 @@ the option to use the gradle wrapper
 * <a href="https://bit.ly/2QslbgB" target="_blank">LiveData with SnackBar, Navigation and other events</a>
 * <a href="https://bit.ly/2H133oY" target="_blank">LiveData beyond the ViewModel</a>
 * <a href="http://bit.ly/2HmgTm0" target="_blank">LiveData with single events</a>
+* <a href="http://bit.ly/2HlOhtY" target="_blank">An Early Look at ViewModel SavedState</a>
 
 ### Room
 * <a href="https://bit.ly/2EjIbGp" target="_blank">The Room in the House (Android Dev Summit '18)</a>
@@ -168,6 +172,7 @@ the option to use the gradle wrapper
 * <a href="http://bit.ly/2XuIHtW" target="_blank">Populating Room Database with WorkManager sample app</a>
 * <a href="http://bit.ly/2NA5ShV" target="_blank">Room Persistence Library with Coroutines</a>
 * <a href="http://bit.ly/2EFtKhd" target="_blank">Dependency Injection with KOIN to Androidx Jetpack</a>
+* <a href="http://bit.ly/2VZWOWp" target="_blank">Upgrade to Room 2.1.0-alpha05, use withTransaction</a>
 
 ### DataBinding
 * <a href="https://bit.ly/2ISEooO" target="_blank">Modern Data Binding(Droidcon Italy 2018)</a>
@@ -180,11 +185,13 @@ the option to use the gradle wrapper
 
 ### Constraintlayouts & Motionlayout
 * <a href="https://bit.ly/2IJbBmD" target="_blank">ConstraintLayout Deep Dive (Android Dev Summit '18)</a>
+* <a href="https://bit.ly/2HybEj5" target="_blank">MotionLayout & ConstraintLayout 2.0 (Droidcon SF 2018)</a>
 * <a href="https://bit.ly/2HdY5Fx" target="_blank">Deep dive into MotionLayout (DroidKaigi 2019)</a>
 * <a href="https://bit.ly/2Sx8Cxl" target="_blank">MotionLayout / Constraint Layout Samples</a>
 * <a href="https://medium.com/snapp-mobile/pull-the-keytrigger-with-motionlayout-e2e7e73d1dbb" target="_blank">Pull the KeyTrigger with MotionLayout</a>
 * <a href="https://bit.ly/2tRcGPj" target="_blank">Android Fundamentals: ConstraintLayout(Pluralsight)</a>
 * <a href="https://bit.ly/2BXPQtE" target="_blank">Android Motion Layout tutorial – Collapsing view</a>
+* <a href="http://bit.ly/2TMqkBx" target="_blank">MotionLayout Tutorial For Android: Getting Started</a>
 
 ### Koin
 * <a href="https://bit.ly/2E7w3YP" target="_blank">Painless Android testing with Room & Koin</a>
@@ -221,6 +228,11 @@ the option to use the gradle wrapper
 * <a href="http://bit.ly/2tEZ0qq" target="_blank">Simple intro for Rest-Api loading of json data into recyclerview using Kotlin</a>
 * <a href="http://bit.ly/2T2SU22" target="_blank">First Java MVVM project that includes: Paging library, ViewModel, LiveData, Room and Retrofit</a>
 * <a href="http://bit.ly/2IIxaUC" target="_blank">The Movie Datbase</a>
+* <a href="http://bit.ly/2F1E16p" target="_blank">Android RecyclerView Tutorial with Kotlin</a>
+
+### ViewPager
+* <a href="http://bit.ly/2CoFJhD" target="_blank">ViewPager Tutorial: Getting Started in Kotlin</a>
+* <a href="http://bit.ly/2TM38n7" target="_blank">Exploring the View Pager 2</a>
 
 ### Android Accessibility
 * <a href="https://bit.ly/2Vu4RL3" target="_blank">Course: Android App Development: Accessibility(LinkedIn Learning)</a>
@@ -234,6 +246,8 @@ the option to use the gradle wrapper
 * <a href="http://bit.ly/2Ej7Wqh" target="_blank">The Components of Material Design (Android Dev Summit '18)</a>
 * <a href="http://bit.ly/2NAhzFb" target="_blank">Best Practices for Themes and Styles (Android Dev Summit '18)</a>
 * <a href="http://bit.ly/2H5WXDD" target="_blank">Use Android Text Like a Pro (Android Dev Summit '18)</a>
+* <a href="http://bit.ly/2JgPFj8" target="_blank">DayNight — Adding a dark theme to your app</a>
+
 
 ### Other
 * <a href="https://bit.ly/2H1f1yE" target="_blank">Kotlin + buildSrc for Better Gradle Dependency Management</a>
