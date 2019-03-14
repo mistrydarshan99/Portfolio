@@ -251,6 +251,7 @@ the option to use the gradle wrapper
 
 ### Other
 * <a href="https://bit.ly/2H1f1yE" target="_blank">Kotlin + buildSrc for Better Gradle Dependency Management</a>
+* <a href="http://bit.ly/2TPA0LH" target="_blank">Sharing Gradle Configuration in Multi-Module Android Projects</a>
 * <a href="http://bit.ly/2SXOm8e" target="_blank">Migrate from GSON to Moshi in Android</a>
 
 ## Project Maintained By
