@@ -248,6 +248,10 @@ the option to use the gradle wrapper
 * <a href="http://bit.ly/2H5WXDD" target="_blank">Use Android Text Like a Pro (Android Dev Summit '18)</a>
 * <a href="http://bit.ly/2JgPFj8" target="_blank">DayNight — Adding a dark theme to your app</a>
 
+### Sample Data
+* <a href="http://bit.ly/2FfK7kS" target="_blank">What's new with ConstraintLayout and Android Studio design tools</a>
+* <a href="http://bit.ly/2O4z28Y" target="_blank">Tool Time – Part 1</a>
+* <a href="http://bit.ly/2O8fu3z" target="_blank">Tool Time – Part 2</a>
 
 ### Other
 * <a href="https://bit.ly/2H1f1yE" target="_blank">Kotlin + buildSrc for Better Gradle Dependency Management</a>
