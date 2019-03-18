@@ -152,6 +152,7 @@ the option to use the gradle wrapper
 * <a href="https://bit.ly/2Stik3R" target="_blank">Kotlin Null Safety Best Practices</a>
 
 ### Navigation Controller: Single Activity
+* <a href="http://bit.ly/2JmrvDM" target="_blank">Android Jetpack: manage UI navigation with Navigation Controller (Google I/O '18)</a>
 * <a href="https://bit.ly/2Sz8mOu" target="_blank">Single Activity: Why, When, and How (Android Dev Summit '18)</a>
 * <a href="http://bit.ly/2TCJHhh" target="_blank">Advanced Navigation Sample</a>
 * <a href="http://bit.ly/2u6JFim" target="_blank">Master-Detail views with Navigation Components</a>
