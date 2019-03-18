@@ -4,14 +4,17 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools">
     <data>
-        <variable name="model" type="me.tumur.portfolio.viewmodel.activities.MainViewModel"/>
+        <variable name="model" type="me.tumur.portfolio.screens.MainViewModel"/>
     </data>
 
+    <!-- Portrait mode -->
     <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_main_screen_portrait"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            tools:context=".view.activities.MainActivity">
+            tools:context=".screens.MainActivity">
 
+        <!-- Toolbar -->
         <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
@@ -23,6 +26,7 @@
                 app:layout_constraintBottom_toTopOf="@+id/nav_host_fragment"
                 android:theme="@style/ToolbarTheme"/>
 
+        <!-- Navigation host fragment -->
         <fragment
                 android:id="@+id/nav_host_fragment"
                 android:layout_width="match_parent"
@@ -37,6 +41,7 @@
                 app:navGraph="@navigation/nav_graph"
                 tools:layout="@layout/fragment_profile"/>
 
+        <!-- Bottom navigation menu -->
         <com.google.android.material.bottomnavigation.BottomNavigationView
                 android:id="@+id/navigation_bottom"
                 android:layout_width="@dimen/dimen_0dp"

@@ -1,0 +1,14 @@
+{
+  "contact": [
+    {
+      "name": "Phone",
+      "text": "+1 510-274-7622",
+      "icon": "@sample/phone"
+    },
+    {
+      "name": "Email",
+      "text": "tumur.alex@gmail.com",
+      "icon": "@sample/email"
+    }
+  ]
+}

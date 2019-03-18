@@ -1,0 +1,28 @@
+{
+  "screen": [
+    {
+      "error_title": "Error"
+    },
+    {
+      "error_text": "Oops, something is wrong."
+    },
+    {
+      "empty_title": "Empty"
+    },
+    {
+      "empty_text": "Please connect to the internet to retrieve data from the server."
+    },
+    {
+      "no_internet_title": "No internet"
+    },
+    {
+      "no_internet_text": "Please check your connection and try again."
+    },
+    {
+      "loading": "Loading"
+    },
+    {
+      "retry": "Retry"
+    }
+  ]
+}

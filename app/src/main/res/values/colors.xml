@@ -8,11 +8,13 @@
     <color name="colorAccentLight">#49B749</color>
     <color name="colorError">#E86C60</color>
 
-    <color name="colorPrimaryText">#212121</color>
-    <color name="colorSecondaryText">#757575</color>
+    <color name="colorPrimaryText">#202124</color>
+    <color name="colorSecondaryText">#80868b</color>
 
-    <color name="colorBackground">#F0F2f7</color>
+    <color name="colorBackground">#FFFFFF</color>
     <color name="colorBottomMenuBackground">#F0F0F0</color>
+    <color name="colorBackgroundSocialItem">#DADCE0</color>
     <color name="colorBorder">#E2E2E2</color>
     <color name="colorIcon">#9AA0A6</color>
+    <color name="colorWhite">#FFFFFF</color>
 </resources>

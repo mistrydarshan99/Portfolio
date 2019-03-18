@@ -1,0 +1,24 @@
+{
+  "social": [
+    {
+      "title": "Github",
+      "text": "Visit my Github account",
+      "icon": "@sample/github"
+    },
+    {
+      "title": "LinkedIn",
+      "text": "Visit my LinkedIn account",
+      "icon": "@sample/linkedin"
+    },
+    {
+      "title": "Twitter",
+      "text": "Follow me on Twitter",
+      "icon": "@sample/twitter"
+    },
+    {
+      "title": "Resume",
+      "text": "View my resume",
+      "icon": "@sample/resume"
+    }
+  ]
+}

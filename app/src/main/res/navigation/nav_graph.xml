@@ -6,22 +6,22 @@
             app:startDestination="@id/navigation_profile">
 
     <fragment android:id="@+id/navigation_profile"
-              android:name="me.tumur.portfolio.view.fragments.ProfileFragment"
+              android:name="me.tumur.portfolio.screens.profile.ProfileFragment"
               android:label="@string/menu_profile"
               tools:layout="@layout/fragment_profile"/>
 
     <fragment android:id="@+id/navigation_portfolio"
-              android:name="me.tumur.portfolio.view.fragments.PortfolioFragment"
+              android:name="me.tumur.portfolio.screens.portfolio.PortfolioFragment"
               android:label="@string/menu_portfolio"
               tools:layout="@layout/fragment_portfolio"/>
 
     <fragment android:id="@+id/navigation_experience"
-              android:name="me.tumur.portfolio.view.fragments.ExperienceFragment"
+              android:name="me.tumur.portfolio.screens.experience.ExperienceFragment"
               android:label="@string/menu_experience"
               tools:layout="@layout/fragment_experience"/>
 
     <fragment android:id="@+id/navigation_settings"
-              android:name="me.tumur.portfolio.view.fragments.SettingsFragment"
+              android:name="me.tumur.portfolio.screens.settings.SettingsFragment"
               android:label="@string/menu_settings"
               tools:layout="@layout/fragment_settings"/>
 </navigation>

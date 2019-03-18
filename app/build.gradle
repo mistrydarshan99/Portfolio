@@ -2,22 +2,22 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
-apply plugin: "androidx.navigation.safeargs"
+apply plugin: "androidx.navigation.safeargs.kotlin"
 apply plugin: 'io.fabric'
 apply from: "../utils.gradle"
 
 
 android {
-    compileSdkVersion versions.compile_sdk
+    compileSdkVersion build_versions.compile_sdk
     defaultConfig {
-        applicationId versions.app_id
-        minSdkVersion versions.min_sdk
-        targetSdkVersion versions.target_sdk
+        applicationId build_versions.app_id
+        minSdkVersion build_versions.min_sdk
+        targetSdkVersion build_versions.target_sdk
         multiDexEnabled true
         vectorDrawables.useSupportLibrary = true
-        versionCode getVersionCode(versions.major, versions.minor, versions.patch, versions.build)
-        versionName getVersionName(versions.major, versions.minor, versions.patch)
-        testInstrumentationRunner deps.junit_runner
+        versionCode getVersionCode(build_variants.major, build_variants.minor, build_variants.patch, build_variants.build)
+        versionName getVersionName(build_variants.major, build_variants.minor, build_variants.patch)
+        testInstrumentationRunner deps.androidx.test_runner
     }
 
     buildTypes {
@@ -59,7 +59,7 @@ android {
     applicationVariants.all {
         variant ->
             if (variant.buildType.name == "release") {
-                renameArtifact(versions.app_name, variant)
+                renameArtifact(build_versions.app_name, variant)
             }
     }
 }
@@ -67,70 +67,79 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    // Foundation
-    implementation deps.kotlin_stdlib                   // Kotlin
-    implementation deps.androidx_core                   // AndroidX core
-    implementation deps.androidx_legacy                 // AndroidX legacy
-    implementation deps.androidx_futures                // AndroidX futures
-    implementation deps.androidx_appcompat              // Appcompat
-    implementation deps.androidx_emojicompat            // Emoji
-    implementation deps.androidx_vector                 // Vector drawable
-    implementation deps.android_material                // Material design
-    implementation deps.androidx_constraint             // Constraint layout
-    implementation deps.androidx_pager                  // Viewpager
+    // Kotlin
+    implementation deps.kotlin.stdlib
 
-    // Architecture components
-    implementation deps.lifecycles_viewmodel            // Lifecycles - ViewModel and LiveData
-    implementation deps.lifecycles_extension            // Lifecycles - Extension
-    kapt deps.lifecycles_compiler                       // Lifecycles annotation
-    implementation deps.androidx_room                   // Room
-    kapt deps.room_compiler                             // Room annotation
-    implementation deps.room_coroutines                 // Room coroutines
-    implementation deps.androidx_paging                 // Paging
-    implementation deps.androidx_nav                    // Navigation controller
-    implementation deps.nav_ui                          // Navigation controller UI
-    implementation deps.androidx_work                   // Workmanager
+    // Google
+    implementation deps.google.material
+    implementation deps.google.guava
 
-    //Firebase products
-    implementation deps.fb_core                         // Core
-    implementation deps.fb_crash                        // Crashlytics
-    implementation deps.fb_config                       // Remote config
-    implementation deps.fb_index                        // App index
-    implementation deps.fb_amsg                         // In app message
+    // AndroidX Foundation
+    implementation deps.androidx.core
+    implementation deps.androidx.legacy
+    implementation deps.androidx.futures
+    implementation deps.androidx.appcompat
+    implementation deps.androidx.vector
+    implementation deps.androidx.constraint
+    implementation deps.androidx.viewpager
+    implementation deps.androidx.emoji
 
-    // Network
-    implementation deps.retrofit2                       // Retrofit2
-    implementation deps.retrofit2_gson                  // Retrofit2 Gson converter
-    implementation deps.retrofit2_coroutines            // Retrofit2 Coroutines adapter
-    implementation deps.okhttp3                         // OkHttp3
-    implementation deps.okhttp3_interceptor             // OkHttp3 logging interceptor
-    implementation deps.glide                           // Glide
-    kapt deps.glide_annotation                          // Glide Annotation
-    implementation deps.koin                            // Koin dependency injection
-    implementation deps.koin_viewmodel                  // Koin AndroidX viewmodel
-    implementation deps.koin_scope                      // Koin Android scope
-    implementation deps.coroutines                      // Kotlin coroutines
-    implementation deps.coroutines_android              // Kotlin Android coroutines
-    implementation deps.stetho                          // Stetho
-    implementation deps.stetho_okhttp3                  // Stetho OkHttp3
+    // Android Architecture components
+    implementation deps.lifecycle.viewmodel
+    implementation deps.lifecycle.extension
+    kapt deps.lifecycle.compiler
+    implementation deps.room.runtime
+    implementation deps.room.ktx
+    kapt deps.room.compiler
+    implementation deps.navigation.fragment
+    implementation deps.navigation.ui
+    implementation deps.paging.runtime
+    implementation deps.work.runtime
 
-    // Utils
-    implementation deps.shimmer                         // Facebook's shimmer layout
-    implementation deps.timber                          // Timber logging
-    implementation deps.three10                         // ThreeTenABP
-    debugImplementation deps.leak_canary                // Leak Canary
-    releaseImplementation deps.leak_canary_no_op        // Leak Canary no operation
-    debugImplementation deps.leak_canary_fragment       // Leak Canary fragment
-    implementation deps.sdp                             // Scalable dependency pixel
-    implementation deps.circle                          // Circle image view
-    implementation deps.guava                           // Guava
+    // Firebase components
+    implementation deps.firebase.core
+    implementation deps.firebase.crashlytics
+    implementation deps.firebase.config
+    implementation deps.firebase.appindex
+
+    // Dependency injection
+    implementation deps.koin.viewmodel
+
+    // Network components
+    implementation deps.coroutines.core
+    implementation deps.coroutines.android
+    implementation deps.retrofit.core
+    implementation deps.retrofit.moshi
+    implementation deps.retrofit.coroutines
+    implementation deps.moshi.core
+    implementation deps.moshi.kotlin
+    kapt deps.moshi.codegen
+    implementation deps.moshi.adapters
+    implementation deps.okhttp.core
+    implementation deps.okhttp.logging
+    implementation deps.glide.core
+    kapt deps.glide.compiler
+    implementation deps.stetho.core
+    implementation deps.stetho.okhttp
+
+    // Utilities
+    debugImplementation deps.leak_canary.core
+    releaseImplementation deps.leak_canary.no_op
+    debugImplementation deps.leak_canary.fragment
+    implementation deps.utilities.shimmer
+    implementation deps.utilities.timber
+    implementation deps.utilities.three_ten_abp
+    implementation deps.utilities.sdp
+    implementation deps.utilities.circle_image_view
 
     // Test
-    testImplementation deps.junit                       // JUnit test
-    androidTestImplementation deps.androidx_test        // AndroidX test
-    androidTestImplementation deps.androidx_espresso    // Espresso test
-    testImplementation deps.androidx_arch_test          // AndroidX architecture component test
-    testImplementation deps.androidx_paging_test        // AndroidX Paging test
-    testImplementation deps.androidx_room_test          // AndroidX Room test
+    testImplementation deps.test.junit
+    androidTestImplementation deps.androidx.test
+    androidTestImplementation deps.androidx.espresso
+    testImplementation deps.room.test
+    testImplementation deps.androidx.arch_test
+    testImplementation deps.paging.test
+    testImplementation deps.koin.test
+    androidTestImplementation deps.work.test
 }
 apply plugin: 'com.google.gms.google-services'

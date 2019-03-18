@@ -3,9 +3,9 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
-        tools:context=".view.activities.MainActivity">
+        tools:context=".screens.MainActivity">
     <data>
-        <variable name="headerModel" type="me.tumur.portfolio.viewmodel.activities.MainViewModel"/>
+        <variable name="headerModel" type="me.tumur.portfolio.screens.MainViewModel"/>
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -28,7 +28,7 @@
                 app:imageUrl="@{headerModel.avatar}"
                 app:placeholder="@{@drawable/ic_profile_placeholder}"
                 app:error="@{@drawable/ic_error}"
-                tools:src="@tools:sample/avatars"/>
+                tools:src="@sample/profile.json/profile/avatar"/>
 
         <TextView
                 style="@style/DrawerHeaderName"
@@ -42,7 +42,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/iv_avatar"
                 android:textColor="@android:color/white"
                 android:text="@{headerModel.name}"
-                tools:text="@sample/data.json/drawer_header/name"/>
+                tools:text="@sample/profile.json/profile/name"/>
 
         <TextView
                 style="@style/DrawerHeaderTitle"
@@ -55,7 +55,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tv_name"
                 android:text="@{headerModel.title}"
-                tools:text="@sample/data.json/drawer_header/title"/>
+                tools:text="@sample/profile.json/profile/title"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

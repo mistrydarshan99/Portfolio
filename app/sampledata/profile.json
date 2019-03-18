@@ -1,0 +1,31 @@
+{
+  "profile": [
+    {
+      "greeting": "\uD83D\uDC4BHello, my name's"
+    },
+    {
+      "avatar": "@sample/profile"
+    },
+    {
+      "name": "Tumur.B(Alex)"
+    },
+    {
+      "title": "Android Developer"
+    },
+    {
+      "read_more": "Read more"
+    },
+    {
+      "location": "Hayward, CA"
+    },
+    {
+      "degree": "Bachelor's degree, Computer Science"
+    },
+    {
+      "school": "University of Mittweida, Germany"
+    },
+    {
+      "summary": "Android Developer with two years of experience in Kotlin, Java, and published four apps on Google Play Store. Up to date with the latest technologies."
+    }
+  ]
+}

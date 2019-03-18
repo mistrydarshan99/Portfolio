@@ -1,19 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <defaultsMap>
+
+    <!-- Drawer header -->
     <entry>
-        <key>name</key>
+        <key>header_name</key>
         <value>Tumur.B(Alex)</value>
     </entry>
     <entry>
-        <key>avatar</key>
+        <key>header_avatar</key>
         <value>https://tumur.me/img/profile.jpg</value>
     </entry>
     <entry>
-        <key>title</key>
+        <key>header_title</key>
         <value>Android Developer</value>
     </entry>
+
+    <!-- UI State -->
     <entry>
-        <key>read_more</key>
+        <key>screen_empty_title</key>
+        <value>Empty</value>
+    </entry>
+    <entry>
+        <key>screen_empty_text</key>
+        <value>Please connect to the internet to retrieve data from the server.</value>
+    </entry>
+    <entry>
+        <key>screen_no_network_title</key>
+        <value>No internet</value>
+    </entry>
+    <entry>
+        <key>screen_no_network_text</key>
+        <value>Please check your connection and try again.</value>
+    </entry>
+    <entry>
+        <key>screen_error_title</key>
+        <value>Error</value>
+    </entry>
+    <entry>
+        <key>screen_error_text</key>
+        <value>Oops, something is wrong.</value>
+    </entry>
+
+    <!-- Buttons -->
+    <entry>
+        <key>screen_btn_read_more</key>
         <value>Read more</value>
     </entry>
+
+    <entry>
+        <key>header_btn_try_again</key>
+        <value>Try again</value>
+    </entry>
+
 </defaultsMap>

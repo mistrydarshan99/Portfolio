@@ -13,9 +13,11 @@
     <string name="cd_menu_experience_icon">Animated profile menu icon</string>
     <string name="cd_menu_settings_icon">Animated profile menu icon</string>
     <string name="cd_icon_one">Animated logo icon</string>
-    <string name="cd_internet_icon_avd">Animated internet icon</string>
-    <string name="cd_error_icon_avd">Animated error icon</string>
     <string name="cd_icon_two">Animated loader icon</string>
-    <string name="cd_loading_percent">Percentage of loading data</string>
+    <string name="cd_empty_icon">Empty icon</string>
+    <string name="cd_error_icon">Error icon</string>
+    <string name="cd_no_internet_icon">No internet icon</string>
     <string name="cd_avatar">Profile picture</string>
+    <string name="cd_social_icon">Social icon</string>
+    <string name="error_shared_preference">This type cannot be saved into Preferences</string>
 </resources>

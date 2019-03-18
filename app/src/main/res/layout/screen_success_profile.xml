@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".screens.profile.ProfileFragment">
+    <data>
+        <variable name="data" type="me.tumur.portfolio.screens.profile.ProfileViewModel"/>
+        <variable name="sharedData" type="me.tumur.portfolio.screens.MainViewModel"/>
+    </data>
+
+    <!-- Portrait Mode-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_state_has_data_profile_portrait"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"
+            app:uiScreenSuccess="@{data.uiState}">
+
+        <!-- Profile header -->
+        <com.google.android.material.card.MaterialCardView
+                style="@style/ProfileCard"
+                android:id="@+id/cv_profile_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintVertical_chainStyle="packed"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/rv_profile_social"
+                app:layout_constraintEnd_toEndOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_profile_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp">
+
+                <!-- Portrait Image -->
+                <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/iv_avatar"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_100sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:clickable="false"
+                        android:contentDescription="@string/cd_avatar"
+                        android:focusable="true"
+                        app:layout_constraintVertical_chainStyle="packed"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toTopOf="@+id/tv_name"
+                        app:imageUrl="@{data.avatar}"
+                        app:placeholder="@{@drawable/ic_profile_placeholder}"
+                        app:error="@{@drawable/ic_error}"
+                        app:civ_border_width="@dimen/_2sdp"
+                        app:civ_border_color="@color/colorBorder"
+                        tools:src="@sample/profile.json/profile/avatar"/>
+
+                <!-- Profile name-->
+                <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:clickable="false"
+                        android:focusable="true"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/iv_avatar"
+                        app:layout_constraintBottom_toTopOf="@+id/tv_title"
+                        android:textAppearance="@style/ProfileName"
+                        android:text="@{data.name}"
+                        tools:text="@sample/profile.json/profile/name"/>
+
+                <!-- Portrait title-->
+                <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_name"
+                        app:layout_constraintBottom_toTopOf="@+id/tv_summary"
+                        android:textAppearance="@style/ProfileTitle"
+                        android:text="@{data.title}"
+                        tools:text="@sample/profile.json/profile/title"/>
+
+                <!-- Portrait summary-->
+                <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/ProfileSummary"
+                        android:id="@+id/tv_summary"
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+                        app:layout_constraintBottom_toTopOf="@+id/btn_more"
+                        android:text="@{data.summary}"
+                        tools:text="@sample/profile.json/profile/summary"/>
+
+                <!-- Read more button -->
+                <com.google.android.material.button.MaterialButton
+                        style="@style/ProfileBtnMore"
+                        android:id="@+id/btn_more"
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="wrap_content"
+                        app:cornerRadius="@dimen/_10sdp"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_summary"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:text="@{data.readMore}"
+                        tools:text="@sample/profile.json/profile/read_more"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Profile social items -->
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_profile_social"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/cv_profile_header"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:itemCount="3"
+                tools:listitem="@layout/row_item_social"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
